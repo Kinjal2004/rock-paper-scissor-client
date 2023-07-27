@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamePage</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://rock-paper-scissor-backend-9dmr.onrender.com/socket.io/socket.io.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="landingPage">
+    <h1>ROCK PAPER SCISSOR</h1>
+    <button id="generateButton">Generate Link</button>
+    <label for="joinId">Or, Enter the room id:</label>
+    <input type="number" id="joinId" name="joinId">
+    <button id="joinButton">Enter Room</button>
+  </div>
+
+  <div id="gamePage">
+    <div id="roomId"></div>
+    <div id="userJoinedId"></div>
+    <div id="container">
+      <div class="left box">
+        <div id="local-res">Local: 0</div>
+        <div id="local-choice"></div>
+        <div id="buttons">
+          <button class="buttons" id="Rock">Rock</button>
+          <button class="buttons" id="Paper">Paper</button>
+          <button class="buttons" id="Scissor">Scissor</button>
+        </div>
+      </div>
+      <div class="right box">
+        <div id="remote-res">Remote: 0</div>
+        <div id="remote-choice">Loading...</div>
+      </div>
+    </div>
+    <dialog id="winDialog">
+      <p id="winMessage">Local has Won</p>
+      <p id="replayMessage"></p>
+      <button id="replayBtn">Replay</button>
+    </dialog>
+  </div>
+</body>
+</html>

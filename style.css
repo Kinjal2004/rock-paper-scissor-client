@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+#landingPage h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#landingPage button,
+#landingPage input {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#gamePage {
+  display: none;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#roomId {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+#userJoinedId {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  height: 60vh;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left.box,
+.right.box {
+  flex-basis: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#local-res,
+#remote-res {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+#local-choice,
+#remote-choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin: 8px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons:hover {
+  background-color: #45a049;
+}
+.buttons:disabled {
+  opacity: 0.5;  /* Adjust the opacity to your desired value */
+  cursor: not-allowed;  /* Change the cursor to indicate it's not clickable */
+  /* Add any additional styling properties you want */
+}
+
+#winDialog p {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+#replayBtn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#replayBtn:hover {
+  background-color: #45a049;
+}
