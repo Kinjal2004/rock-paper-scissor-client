@@ -2,7 +2,7 @@
 https://kinjal2004.github.io/rock-paper-scissor-client/
 # Rock, Paper, Scissors Game - Client Side
 
-This is a simple client-side Rock, Paper, Scissors game implemented using HTML, CSS, and JavaScript. 
+This is a simple client-side Multiplayer Rock, Paper, Scissors game implemented using HTML, CSS, and JavaScript. 
 
 ## How to Play
 
